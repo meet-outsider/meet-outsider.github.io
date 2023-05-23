@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Outsider</title>
+    <link>https://meet-outsider.github.io/</link>
+    <description>Recent content on Outsider</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 23 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://meet-outsider.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>闭包</title>
+      <link>https://meet-outsider.github.io/posts/closure/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/posts/closure/</guid>
+      <description>特性 来自百度百科的定义
+闭包就是能够读取其他函数内部变量的函数。例如在 javascript 中，只有函数内部的子函数才能读取局部变量，所以闭包可以理解成“定义在一个函数内部的函数“。在本质上，闭包是将函数内部和函数外部连接起来的桥梁。
+wiki 上的定义
+在计算机科学中，闭包（英語：Closure），又稱词法闭包（Lexical Closure）或函數閉包（function closures），是在支持头等函数的编程语言中实现词法绑定的一种技术。闭包在实现上是一个结构体，它存储了一个函数（通常是其入口地址）和一个关联的环境（相当于一个符号查找表）。环境里是若干对符号和值的对应关系，它既要包括约束变量（该函数内部绑定的符号），也要包括自由变量（在函数外部定义但在函数内被引用），有些函数也可能没有自由变量。闭包跟函数最大的不同在于，当捕捉闭包的时候，它的自由变量会在捕捉时被确定，这样即便脱离了捕捉时的上下文，它也能照常运行。捕捉时对于值的处理可以是值拷贝，也可以是名称引用，这通常由语言设计者决定，也可能由用户自行指定（如 C++）。
+可以看到，闭包的定义有两个要点：
+闭包是一个结构体，它存储了一个函数（通常是其入口地址）和一个关联的环境（相当于一个符号查找表）。 闭包的自由变量会在捕捉时被确定，这样即便脱离了捕捉时的上下文，它也能照常运行。 这样做的好处是，闭包可以在不同的上下文中运行，而不会受到上下文的影响。
+代码实现 接下来直接看一些例子 😊:
+经典的计数器例子：
+function counter() { let count = 0; return function () { count++; console.log(count); }; } 运行结果:
+const c = counter(); c(); // 1 c(); // 2 c(); // 3 const c2 = counter(); c2(); // 1 c2(); // 2 c2(); // 3 可以看到两次调用 counter() 生成了两个不同的计数器，它们之间的状态是独立的。
+步骤拆分 如果你根据上面的定义，和上面的例子，已经理解了，你很聪明 👍
+如果还是不太理解或者对文章感兴趣，可以看下面的步骤拆分
+这里使用 go 语言来实现上面的例子的拆分</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://meet-outsider.github.io/projects/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/projects/</guid>
+      <description>github.com docman
+docman-react</description>
+    </item>
+    
+    <item>
+      <title>智能指针</title>
+      <link>https://meet-outsider.github.io/posts/smart_pointer/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/posts/smart_pointer/</guid>
+      <description>Hello World! This is my blog.</description>
+    </item>
+    
+  </channel>
+</rss>
