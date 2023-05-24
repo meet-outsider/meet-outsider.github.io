@@ -2,43 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://meet-outsider.github.io/zh-cn/tags/asm/</loc>
+    <loc>https://meet-outsider.github.io/zh-cn/tags/cpu/</loc>
     <lastmod>2023-05-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://meet-outsider.github.io/en-us/tags/asm/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://meet-outsider.github.io/zh-cn/tags/asm/"
-                />
   </url><url>
-    <loc>https://meet-outsider.github.io/zh-cn/tags/compiler/</loc>
+    <loc>https://meet-outsider.github.io/zh-cn/posts/compiler/</loc>
     <lastmod>2023-05-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://meet-outsider.github.io/en-us/tags/compiler/"
+                href="https://meet-outsider.github.io/en-us/posts/compiler/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meet-outsider.github.io/zh-cn/tags/compiler/"
-                />
-  </url><url>
-    <loc>https://meet-outsider.github.io/zh-cn/tags/env/</loc>
-    <lastmod>2023-05-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://meet-outsider.github.io/en-us/tags/env/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://meet-outsider.github.io/zh-cn/tags/env/"
+                href="https://meet-outsider.github.io/zh-cn/posts/compiler/"
                 />
   </url><url>
     <loc>https://meet-outsider.github.io/zh-cn/</loc>
@@ -80,18 +57,11 @@
                 href="https://meet-outsider.github.io/zh-cn/tags/"
                 />
   </url><url>
-    <loc>https://meet-outsider.github.io/zh-cn/posts/compiler/</loc>
+    <loc>https://meet-outsider.github.io/zh-cn/tags/%E7%BC%96%E8%AF%91%E5%99%A8/</loc>
     <lastmod>2023-05-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://meet-outsider.github.io/en-us/posts/compiler/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://meet-outsider.github.io/zh-cn/posts/compiler/"
-                />
+  </url><url>
+    <loc>https://meet-outsider.github.io/zh-cn/tags/%E6%A0%87%E5%87%86%E5%BA%93/</loc>
+    <lastmod>2023-05-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://meet-outsider.github.io/zh-cn/tags/golang/</loc>
     <lastmod>2023-05-23T00:00:00+00:00</lastmod>

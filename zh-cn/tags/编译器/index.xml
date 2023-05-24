@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编译器 on Outsider</title>
+    <link>https://meet-outsider.github.io/zh-cn/tags/%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+    <description>Recent content in 编译器 on Outsider</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://meet-outsider.github.io/zh-cn/tags/%E7%BC%96%E8%AF%91%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CPU指令集、编译器与标准库选择</title>
+      <link>https://meet-outsider.github.io/zh-cn/posts/compiler/</link>
+      <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/zh-cn/posts/compiler/</guid>
+      <description>在软件开发中，选择适当的 CPU 指令集架构、编译器和标准库是非常重要的决策。本文将探讨不同选项之间的差异和选择的考虑因素。
+CPU 指令集架构 不同的 CPU 架构具有不同的指令集、种常见的指令集架构：
+x86 指令集架构：主要用于个人计算机和服务器，具有复杂的指令集和多种工作模式，我们常用的 PC 和服务器都是基于 x86 架构的。 ARM 指令集架构：主要用于移动设备和嵌入式系统，具有精简和高效的指令集，我们常用的手机和平板电脑都是基于 ARM 架构的。 MIPS 指令集架构：主要用于嵌入式系统和网络设备，具有简洁、清晰的指令集设计， MIPS 架构的路由器和交换机很常见。 Power 指令集架构：主要用于高性能计算和服务器，具有高度并行和大规模并行处理能力， IBM 的 POWER 服务器是基于 Power 架构的。 以上指令集架构也代表着: 复杂指令集架构 (CISC) 和 精简指令集架构 (RISC)。CISC 指令集架构具有复杂的指令集和多种工作模式，而 RISC 指令集架构具有精简和高效的指令集。
+x86是CISC架构，ARM是RISC架构。而MIPS和Power则是混合型的指令集架构。
+这里着重对比一下 x86 和 ARM 架构：
+单线程中，x86 架构的 CPU 通常具有更高的性能，因为它具有更多的寄存器和更复杂的指令集。而在多线程中，ARM 架构的 CPU 通常具有更高的性能，因为它具有更多的核心和更好的并行处理能力。
+ARM 架构的 CPU 通常具有更低的功耗，因此在移动设备和嵌入式系统中具有更长的电池寿命，同时也更加节能，成本更低。
+x86 架构的 CPU 通常具有更好的平台兼容性，因此在个人计算机和服务器中具有更广泛的应用，而 ARM 架构的 CPU 通常具有更好的性价比，因此在移动设备和嵌入式系统中具有更广泛的应用。
+选择适当的指令集架构取决于目标平台、性能需求和平台兼容性。
+编译器选择 编译器是将源代码转换为可执行文件的工具。常见的编译器包括 LLVM 和 GCC。它们具有不同的优化能力、支持的语言和特性。 编译器框架：</description>
+    </item>
+    
+  </channel>
+</rss>
