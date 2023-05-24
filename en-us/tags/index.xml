@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Outsider</title>
+    <link>https://meet-outsider.github.io/en-us/tags/</link>
+    <description>Recent content in Tags on Outsider</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://meet-outsider.github.io/en-us/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>asm</title>
+      <link>https://meet-outsider.github.io/en-us/tags/asm/</link>
+      <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/en-us/tags/asm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>compiler</title>
+      <link>https://meet-outsider.github.io/en-us/tags/compiler/</link>
+      <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/en-us/tags/compiler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>env</title>
+      <link>https://meet-outsider.github.io/en-us/tags/env/</link>
+      <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/en-us/tags/env/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://meet-outsider.github.io/en-us/tags/golang/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/en-us/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>js</title>
+      <link>https://meet-outsider.github.io/en-us/tags/js/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/en-us/tags/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>https://meet-outsider.github.io/en-us/tags/rust/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/en-us/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ts</title>
+      <link>https://meet-outsider.github.io/en-us/tags/ts/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/en-us/tags/ts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

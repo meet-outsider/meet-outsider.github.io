@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Outsider</title>
+    <link>https://meet-outsider.github.io/zh-cn/posts/</link>
+    <description>Recent content in Posts on Outsider</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://meet-outsider.github.io/zh-cn/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>编译器</title>
+      <link>https://meet-outsider.github.io/zh-cn/posts/compiler/</link>
+      <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/zh-cn/posts/compiler/</guid>
+      <description>CPU指令集 指令集架构是定义了处理器能够执行的指令集合和对应的操作方式。下面是几种常见的 CPU 指令集架构：
+x86 指令集架构： 代表性处理器：Intel x86 和兼容处理器（如 AMD） 特点：广泛应用于个人计算机和服务器领域，具有复杂的指令集和多种工作模式（如实模式、保护模式、长模式等）。 常见扩展指令集：MMX、SSE、AVX 等。
+ARM 指令集架构： 代表性处理器：ARM Cortex 系列处理器 特点：主要应用于移动设备、嵌入式系统和低功耗领域，具有精简和高效的指令集。 常见扩展指令集：Thumb、Thumb-2、NEON 等。
+MIPS 指令集架构： 代表性处理器：MIPS32 和 MIPS64 处理器 特点：主要应用于嵌入式系统和网络设备领域，具有简洁、清晰的指令集设计。 常见扩展指令集：MIPS-3D、MIPS16e 等。
+Power 指令集架构： 代表性处理器：IBM Power 处理器 特点：主要应用于高性能计算和服务器领域，具有高度并行的特性和大规模的并行处理能力。 常见扩展指令集：AltiVec（Velocity Engine）、VSX（Vector Scalar Extension）等。
+RISC-V 指令集架构： 特点：是一个开源、基于精简指令集计算机（RISC）原则的指令集架构，具有简洁、可扩展和可定制的特性。 应用领域：广泛应用于嵌入式系统、物联网和高性能计算等领域。
+以上是一些常见的 CPU 指令集架构，每种架构都有其独特的特点和应用领域。在选择和学习指令集架构时，需要根据应用需求、平台支持和开发环境等因素进行考虑。不同的指令集架构在指令集、寄存器、内存访问等方面有所差异，因此需要根据具体的架构选择适合的编程模型和工具链进行开发。
+编译器 </description>
+    </item>
+    
+    <item>
+      <title>闭包</title>
+      <link>https://meet-outsider.github.io/zh-cn/posts/closure/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/zh-cn/posts/closure/</guid>
+      <description>特性 来自百度百科的定义
+闭包就是能够读取其他函数内部变量的函数。例如在 javascript 中，只有函数内部的子函数才能读取局部变量，所以闭包可以理解成“定义在一个函数内部的函数“。在本质上，闭包是将函数内部和函数外部连接起来的桥梁。
+wiki 上的定义
+在计算机科学中，闭包（英語：Closure），又稱词法闭包（Lexical Closure）或函數閉包（function closures），是在支持头等函数的编程语言中实现词法绑定的一种技术。闭包在实现上是一个结构体，它存储了一个函数（通常是其入口地址）和一个关联的环境（相当于一个符号查找表）。环境里是若干对符号和值的对应关系，它既要包括约束变量（该函数内部绑定的符号），也要包括自由变量（在函数外部定义但在函数内被引用），有些函数也可能没有自由变量。闭包跟函数最大的不同在于，当捕捉闭包的时候，它的自由变量会在捕捉时被确定，这样即便脱离了捕捉时的上下文，它也能照常运行。捕捉时对于值的处理可以是值拷贝，也可以是名称引用，这通常由语言设计者决定，也可能由用户自行指定（如 C++）。
+可以看到，闭包的定义有两个要点：
+闭包是一个结构体，它存储了一个函数（通常是其入口地址）和一个关联的环境（相当于一个符号查找表）。 闭包的自由变量会在捕捉时被确定，这样即便脱离了捕捉时的上下文，它也能照常运行。 这样做的好处是，闭包可以在不同的上下文中运行，而不会受到上下文的影响。
+代码实现 接下来直接看一些例子 😊:
+经典的计数器例子：
+function counter() { let count = 0; return function () { count++; console.log(count); }; } 运行结果:
+const c = counter(); c(); // 1 c(); // 2 c(); // 3 const c2 = counter(); c2(); // 1 c2(); // 2 c2(); // 3 可以看到两次调用 counter() 生成了两个不同的计数器，它们之间的状态是独立的。
+步骤拆分 如果你根据上面的定义，和上面的例子，已经理解了，你很聪明 👍
+如果还是不太理解或者对文章感兴趣，可以看下面的步骤拆分
+这里使用 go 语言来实现上面的例子的拆分</description>
+    </item>
+    
+    <item>
+      <title>智能指针</title>
+      <link>https://meet-outsider.github.io/zh-cn/posts/smart_pointer/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/zh-cn/posts/smart_pointer/</guid>
+      <description>Hello World! This is my blog.</description>
+    </item>
+    
+  </channel>
+</rss>
