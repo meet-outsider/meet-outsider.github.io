@@ -17,26 +17,26 @@
     
 
     
-    <title>Categories</title>
-    <meta name="description" content="Forever young, always on the road, always in tears">
-    <meta name="keywords" content='blog, gokarna, hugo, rust'>
+    <title>操作系统</title>
+    <meta name="description" content="操作系统">
+    <meta name="keywords" content='blog, gokarna, hugo, rust, 操作系统'>
 
-    <meta property="og:url" content="https://meet-outsider.github.io/categories/">
+    <meta property="og:url" content="https://meet-outsider.github.io/posts/os/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Categories">
-    <meta property="og:description" content="Forever young, always on the road, always in tears">
-    <meta property="og:image" content="https://meet-outsider.github.io/avatar.png">
-    <meta property="og:image:secure_url" content="https://meet-outsider.github.io/avatar.png">
+    <meta property="og:title" content="操作系统">
+    <meta property="og:description" content="操作系统">
+    <meta property="og:image" content="https://meet-outsider.github.io/path/to/image.png">
+    <meta property="og:image:secure_url" content="https://meet-outsider.github.io/path/to/image.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Categories">
-    <meta name="twitter:description" content="Forever young, always on the road, always in tears">
-    <meta property="twitter:domain" content="https://meet-outsider.github.io/categories/">
-    <meta property="twitter:url" content="https://meet-outsider.github.io/categories/">
-    <meta name="twitter:image" content="https://meet-outsider.github.io/avatar.png">
+    <meta name="twitter:title" content="操作系统">
+    <meta name="twitter:description" content="操作系统">
+    <meta property="twitter:domain" content="https://meet-outsider.github.io/posts/os/">
+    <meta property="twitter:url" content="https://meet-outsider.github.io/posts/os/">
+    <meta name="twitter:image" content="https://meet-outsider.github.io/path/to/image.png">
 
     
-    <link rel="canonical" href="https://meet-outsider.github.io/categories/" />
+    <link rel="canonical" href="https://meet-outsider.github.io/posts/os/" />
 
     <link rel="stylesheet" type="text/css" href="https://meet-outsider.github.io//css/normalize.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" type="text/css" href="https://meet-outsider.github.io//css/main.css">
@@ -151,65 +151,80 @@
     </nav>
 </header>
 <main id="content">
-<div class="container tags-list">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>操作系统</h1>
+        <small role="doc-subtitle">操作系统</small>
+        <p class="post-date">
+            May 24, 2023
+        </p>
 
-    <h1 class="list-title">Tags</h1>
-    
-    <ul class="post-tags">
+        <ul class="post-tags">
         
-        <li class="post-tag">
-            <a href="https://meet-outsider.github.io//tags/rust/">
-                <div class="tag-name">rust</div>
-                <div class="tag-posts-count">2</div>
-            </a>
-        </li>
+            <li class="post-tag"><a href="https://meet-outsider.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F">操作系统</a></li>
         
-        <li class="post-tag">
-            <a href="https://meet-outsider.github.io//tags/cpu/">
-                <div class="tag-name">cpu</div>
-                <div class="tag-posts-count">1</div>
-            </a>
-        </li>
-        
-        <li class="post-tag">
-            <a href="https://meet-outsider.github.io//tags/golang/">
-                <div class="tag-name">golang</div>
-                <div class="tag-posts-count">1</div>
-            </a>
-        </li>
-        
-        <li class="post-tag">
-            <a href="https://meet-outsider.github.io//tags/js/">
-                <div class="tag-name">js</div>
-                <div class="tag-posts-count">1</div>
-            </a>
-        </li>
-        
-        <li class="post-tag">
-            <a href="https://meet-outsider.github.io//tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
-                <div class="tag-name">操作系统</div>
-                <div class="tag-posts-count">1</div>
-            </a>
-        </li>
-        
-        <li class="post-tag">
-            <a href="https://meet-outsider.github.io//tags/%E6%A0%87%E5%87%86%E5%BA%93/">
-                <div class="tag-name">标准库</div>
-                <div class="tag-posts-count">1</div>
-            </a>
-        </li>
-        
-        <li class="post-tag">
-            <a href="https://meet-outsider.github.io//tags/%E7%BC%96%E8%AF%91%E5%99%A8/">
-                <div class="tag-name">编译器</div>
-                <div class="tag-posts-count">1</div>
-            </a>
-        </li>
-        
-    </ul>
-    
+        </ul>
+    </div>
 
+    <div class="post-content">
+        <p>
+            <h2 id="中断">中断</h2>
+<p>Interrupt
+CPU停下当前的工作任务，去处理其他事情，处理完后回来继续执行刚才的任务，这一过程便是中断。</p>
+<h3 id="外部中断硬件中断">外部中断（硬件中断）</h3>
+<ul>
+<li>可屏蔽中断：可以通过设置标志位来屏蔽的中断，如I/O中断、时钟中断等。</li>
+<li>不可屏蔽中断：不可以通过设置标志位来屏蔽的中断，如控制台中断等。</li>
+</ul>
+<h3 id="内部中断软中断">内部中断（软中断）</h3>
+<ul>
+<li>陷入：用户程序中的指令，如系统调用、软中断指令等。</li>
+<li>异常：指令执行过程中产生的问题，如除零、越界等。</li>
+<li>系统调用：用户程序主动发出的中断请求，如fork、read等。</li>
+</ul>
+<h3 id="精度缺失">精度缺失</h3>
+<p>负数用补码表示的，为了性能
+十进制整数转二进制使用的是「除 2 取余法」，十进制转小数使用的是「乘 2 取整法」。
+计算机是以浮点数的形式存储小数的，大多数计算机都是 IEEE 754 标准定义的浮点数格式，包含三个部分：</p>
+<ul>
+<li>符号位：表示数字是正数还是负数，为 0 表示正数，为 1 表示负数；</li>
+<li>指数位：指定了小数点在数据中的位置，指数可以是负数，也可以是正数，指数位的长度越长则数值的表达范围就越大；</li>
+<li>尾数位：小数点右侧的数字，也就是小数部分，比如二进制 1.0011 x 2^(-2)，尾数部分就是 0011，而且尾数的长度决定了这个数的精度，因此如果要表示精度更高的小数，则就要提高尾数位的长度；
+用 32 位来表示的浮点数，则称为单精度浮点数，也就是我们编程语言中的 float 变量，而用 64 位来表示的浮点数，称为双精度浮点数，也就是 double 变量。</li>
+</ul>
+<h3 id="内存">内存</h3>
+<ul>
+<li>内存分段
+需要再分配，一个虚拟地址（段号+偏移量）对应一个物理地址，
+优点：没有内部内存碎片
+缺点：有外部内存碎片</li>
+<li>内存分页
+固定大小的页表，
+内核态：根本指令集
+用户态：内核态的部分多封装，比如异常恢复等功能
+Malloc</li>
+</ul>
+<ul>
+<li>如果用户分配的内存小于 128 KB，则通过 brk() 申请内存；</li>
+<li>如果用户分配的内存大于 128 KB，则通过 mmap() 申请内存；
+Brk函数是动态分配，多次调用，不会频繁切换用户态到内核态
+而mmap函数一定会切换。brk函数会造成内存碎片，所以在大于128kb时，malloc使用了mmap函数来实现。</li>
+</ul>
+<p>内存回收：
+申请分配内存时，如果内存足够直接分配，如果内存不足，</p>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
 </div>
+
+
+
+    
 
         </main><footer class="footer">
     
