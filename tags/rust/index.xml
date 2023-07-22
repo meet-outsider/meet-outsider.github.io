@@ -29,6 +29,16 @@ const c = counter(); c(); // 1 c(); // 2 c(); // 3 const c2 = counter(); c2(); /
     </item>
     
     <item>
+      <title>xiu framework</title>
+      <link>https://meet-outsider.github.io/posts/xiu/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meet-outsider.github.io/posts/xiu/</guid>
+      <description>bit_errors 自定义错误类型枚举 pub enum BitErrorValue { #[fail(display = &amp;#34;bytes read error\n&amp;#34;)] BytesReadError(BytesReadError), #[fail(display = &amp;#34;bytes write error\n&amp;#34;)] BytesWriteError(BytesWriteError), #[fail(display = &amp;#34;the size is bigger than 64\n&amp;#34;)] TooBig, #[fail(display = &amp;#34;cannot write the whole 8 bits\n&amp;#34;)] CannotWrite8Bit, #[fail(display = &amp;#34;cannot read byte\n&amp;#34;)] CannotReadByte, } 定义了结构体BitError，实现了From trait，可以将其他类型转换为BitError类型 Form trait的作用:是官方提供的一个trait，用于类型转换，可以将其他类型转换为自定义类型
+#[derive(Debug)] pub struct BitError { pub value: BitErrorValue, } impl From&amp;lt;BitErrorValue&amp;gt; for BitError { fn from(val: BitErrorValue) -&amp;gt; Self { BitError { value: val } } } impl From&amp;lt;BytesReadError&amp;gt; for BitError { fn from(error: BytesReadError) -&amp;gt; Self { BitError { value: BitErrorValue::BytesReadError(error), } } } impl From&amp;lt;BytesWriteError&amp;gt; for BitError { fn from(error: BytesWriteError) -&amp;gt; Self { BitError { value: BitErrorValue::BytesWriteError(error), } } } 实现了Display和Fail trait,可以将BitError类型转换为字符串,并且可以获取错误的原因和回溯信息，用于调试 impl fmt::Display for BitError { fn fmt(&amp;amp;self, f: &amp;amp;mut fmt::Formatter) -&amp;gt; fmt::Result { fmt::Display::fmt(&amp;amp;self.</description>
+    </item>
+    
+    <item>
       <title>智能指针</title>
       <link>https://meet-outsider.github.io/posts/smart_pointer/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
